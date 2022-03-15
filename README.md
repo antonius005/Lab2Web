@@ -1,13 +1,12 @@
-# Lab2Web
+# Praktikum 2 - Pemrograman Web
+### Antonius Simanjuntak - 312010004
+### TI.20.B.1 - PEMPROGRAMAN WEB
+### UNIVERSITAS PELITA BANGSA
 
-Praktikum 2 - Pemrograman Web
-#ANTONIUS SIMANJUNTAK - 311910460
-#TI.20.B.1 - PEMPROGRAMAN WEB
-
-LANGKAH 1
-
-buat dokumen html dengan isi berikut : step-1
-
+## LANGKAH 1
+buat dokumen html dengan isi berikut :
+![step-1](https://i.imgur.com/NFm1zO9.png)
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,13 +35,13 @@ dan CSS.</p>
  </div>
 </body>
 </html>
-
-lalu buka pada browser untuk melihat hasilnya step-1 output
-LANGKAH 2
-Mendeklarasikan CSS Internal
-
+```
+lalu buka pada browser untuk melihat hasilnya
+![step-1 output](https://i.imgur.com/o4JDDuV.png)
+## LANGKAH 2
+### Mendeklarasikan CSS Internal
 Kemudian tambahkan deklarasi CSS internal seperti berikut pada bagian head dokumen
-
+```
 <head>
  <title>CSS Dasar</title>
  <style>
@@ -64,28 +63,32 @@ Kemudian tambahkan deklarasi CSS internal seperti berikut pada bagian head dokum
  }
  </style>
 </head>
+```
+![step-2](https://i.imgur.com/74Emtig.png)
 
-step-2
+Selanjutnya simpan perubahan yang ada, dan lakukan refresh pada browser untuk melihat
+hasilnya
+![step-2 output](https://i.imgur.com/xVibmX4.png)
 
-Selanjutnya simpan perubahan yang ada, dan lakukan refresh pada browser untuk melihat hasilnya step-2 output
-LANGKAH 3
-Menambahkan Inline CSS
+## LANGKAH 3
+### Menambahkan Inline CSS
+ tambahkan deklarasi inline CSS pada tag <p> seperti berikut
+ ```
+ <p style="text-align: center; color: #ccd8e4;">
+ ```
+ before:
+ ![step-3 before](https://i.imgur.com/PdQFu6Z.png)
+ after :
+ ![step-3 after](https://i.imgur.com/ukibvhK.png)
+ Simpan kembali dan refresh kembali browser untuk melihat perubahannya:
 
-tambahkan deklarasi inline CSS pada tag
+ ![step-3 output](https://i.imgur.com/WGGwbOZ.png)
 
-seperti berikut
-
-<p style="text-align: center; color: #ccd8e4;">
-
-before: step-3 before after : step-3 after Simpan kembali dan refresh kembali browser untuk melihat perubahannya:
-
-step-3 output
-LANGKAH 4
-Membuat CSS Eksternal
-
-Buatlah file baru dengan nama style_eksternal.css kemudian buatlah deklarasi CSS seperti berikut
-
-nav {
+ ## LANGKAH 4
+ ### Membuat CSS Eksternal
+ Buatlah file baru dengan nama style_eksternal.css kemudian buatlah deklarasi CSS seperti berikut
+ ```
+ nav {
 background: #20A759;
 color:#fff;
 padding: 10px;
@@ -99,22 +102,26 @@ nav .active,
 nav a:hover {
 background: #0B6B3A;
 }
-
-step-4 Kemudian tambahkan tag <link>untuk merujuk file css yang sudah dibuat pada bagian <head>
-
+```
+![step-4](https://i.imgur.com/ujFftw1.png)
+Kemudian tambahkan tag `<link>`untuk merujuk file css yang sudah dibuat pada bagian `<head>`
+```
 <head>
  <!-- menyisipkan css eksternal -->
  <link rel="stylesheet" href="style_eksternal.css" type="text/css">
 </head>
+```
+![step-4-1](https://i.imgur.com/W6UCxAk.png)
 
-step-4-1
+Selanjutnya refresh kembali browser untuk melihat perubahannya
+![step-4-1](https://i.imgur.com/ISMBGGb.png)
 
-Selanjutnya refresh kembali browser untuk melihat perubahannya step-4-1
-LANGKAH 5
-Menambahkan CSS Selector
+## LANGKAH 5
+### Menambahkan CSS Selector
+Selanjutnya menambahkan CSS Selector menggunakan ID dan Class Selector. Pada file
+style_eksternal.css, tambahkan kode berikut
 
-Selanjutnya menambahkan CSS Selector menggunakan ID dan Class Selector. Pada file style_eksternal.css, tambahkan kode berikut
-
+```
 /* ID Selector */
 #intro {
 background: #418fb1;
@@ -139,35 +146,45 @@ text-decoration: none;
 .btn-primary {
 background: #E42A42;
 }
+```
+![step-5](https://i.imgur.com/qcaS83z.png)
+Kemudian simpan kembali dan refresh browser untuk melihat perubahannya.
+![step-5 OUTPUT](https://i.imgur.com/gOklVYe.png)
 
-step-5 Kemudian simpan kembali dan refresh browser untuk melihat perubahannya. step-5 OUTPUT
-Pertanyaan dan Tugas
-1. Lakukan eksperimen dengan mengubah dan menambah properti dan nilai pada kode CSS dengan mengacu pada CSS Cheat Sheet yang diberikan pada file terpisah dari modul ini
+# Pertanyaan dan Tugas
+### 1. Lakukan eksperimen dengan mengubah dan menambah properti dan nilai pada kode CSS dengan mengacu pada CSS Cheat Sheet yang diberikan pada file terpisah dari modul ini
+![step-6](https://i.imgur.com/sVetc6i.png)
 
-step-6
-2. Apa perbedaan pendeklarasian CSS elemen h1 {...} dengan #intro h1 {...}? berikan penjelasannya!
-
+### 2. Apa perbedaan pendeklarasian CSS elemen h1 {...} dengan #intro h1 {...}? berikan penjelasannya!
 perbedaaannya jika hanya h1{} maka akan merubah semua yang ada didalam elemen h1 sedangkan intro h1 hanya akan merubah yang memiliki tag intro
-3. Apabila ada deklarasi CSS secara internal, lalu ditambahkan CSS eksternal dan inline CSS pada elemen yang sama. Deklarasi manakah yang akan ditampilkan pada browser? Berikan penjelasan dan contohnya!
 
-jika ketiga CSS merubah elemen yang sama maka deklarasi tersebut akan mengikuti aturan prioritas dimana prioritas CSS nya seperti ini:
-
-    inline CSS
-    ID selector CSS
-    internal CSS
-    external CSS
+### 3. Apabila ada deklarasi CSS secara internal, lalu ditambahkan CSS eksternal dan inline CSS pada elemen yang sama. Deklarasi manakah yang akan ditampilkan pada browser? Berikan penjelasan dan contohnya!
+jika ketiga CSS merubah elemen yang sama maka deklarasi tersebut akan mengikuti aturan prioritas
+dimana prioritas CSS nya seperti ini:
+1. inline CSS
+2. ID selector CSS
+3. internal CSS
+4. external CSS
 
 contoh:
 
-ini adalah tampilan coding pada html testing dimana terdapat 2 kalimat yang memiliki elemen yang sama yaitu h1: step-7
+ini adalah tampilan coding pada html testing dimana terdapat 2 kalimat yang memiliki elemen yang sama yaitu h1:
+ ![step-7](https://i.imgur.com/87FHIwI.png)
 
-disini bisa dilihat sudah terdapat 2 css mencoba merubah warna text h1 : step-8
+ disini bisa dilihat sudah terdapat 2 css mencoba merubah warna text h1 :
+ ![step-8](https://i.imgur.com/6BKuHMb.png) 
 
-sedangkan eksternal css berupa : step-9
+ sedangkan eksternal css berupa :
+ ![step-9](https://i.imgur.com/eciJnc8.png)
 
-dan hasil adalah : step-10 jadi saya mengambil kesimpulan bahwa semakin spesifik CSS tersebut maka prioritas semakin tinggi
-4. Pada sebuah elemen HTML terdapat ID dan Class, apabila masing-masing selector tersebut terdapat deklarasi CSS, maka deklarasi manakah yang akan ditampilkan pada browser? Berikan penjelasan dan contohnya! (
+ dan hasil adalah :
+ ![step-10](https://i.imgur.com/THSnM36.png)
+jadi saya mengambil kesimpulan bahwa semakin spesifik CSS tersebut maka prioritas semakin tinggi
 
-)
-
-hasilnya sesuai dengan kesimpulan saya sebelumnya semakin spesifik css tersebut maka akan semakin tinggi prioritas css tersebut step-11 disitu bisa dilihat terdapat 2 css yang merujuk ke elemen yang sama tapi 1 merujuk dengan id yang birisi font 40 dan warna emas sedangkan yang satu lagi merujuk dengan class yang berisi font 10 dan warna maroon hasilnya adalah: step11-output text "testing" tersebut mengikuti css selector id daripada selector class dikarenakan id lebih spesifik daripada class
+### 4. Pada sebuah elemen HTML terdapat ID dan Class, apabila masing-masing selector tersebut terdapat deklarasi CSS, maka deklarasi manakah yang akan ditampilkan pada browser? Berikan penjelasan dan contohnya! ( <p id="paragraf-1" class="text-paragraf"> )
+hasilnya sesuai dengan kesimpulan saya sebelumnya semakin spesifik css tersebut maka akan semakin tinggi prioritas css tersebut
+![step-11](https://i.imgur.com/eDobCFm.png)
+disitu bisa dilihat terdapat 2 css yang merujuk ke elemen yang sama tapi 1 merujuk dengan id yang birisi font 40 dan warna emas sedangkan yang satu lagi merujuk dengan class yang berisi font 10 dan warna maroon
+hasilnya adalah:
+![step11-output](https://i.imgur.com/6wMF3Nt.png)
+text "testing" tersebut mengikuti css selector id daripada selector class dikarenakan id lebih spesifik daripada class
