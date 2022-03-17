@@ -5,7 +5,7 @@
 
 ## LANGKAH 1
 buat dokumen html dengan isi berikut :
-![step-1](https://i.imgur.com/NFm1zO9.png)
+![vc css dasar](https://user-images.githubusercontent.com/101562285/158750436-3f308d96-51fa-4faf-8a32-e7ab67effa84.png)
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +37,9 @@ dan CSS.</p>
 </html>
 ```
 lalu buka pada browser untuk melihat hasilnya
-![step-1 output](https://i.imgur.com/o4JDDuV.png)
+![css dasar - 1](https://user-images.githubusercontent.com/101562285/158751400-114e3209-15f5-4ce0-acf2-6bd8d32f75d7.png)
+
+
 ## LANGKAH 2
 ### Mendeklarasikan CSS Internal
 Kemudian tambahkan deklarasi CSS internal seperti berikut pada bagian head dokumen
@@ -64,11 +66,12 @@ Kemudian tambahkan deklarasi CSS internal seperti berikut pada bagian head dokum
  </style>
 </head>
 ```
-![step-2](https://i.imgur.com/74Emtig.png)
+![vc css dasar 2](https://user-images.githubusercontent.com/101562285/158751131-884f90bb-431c-4617-ab91-9ebbb22215e7.png)
 
 Selanjutnya simpan perubahan yang ada, dan lakukan refresh pada browser untuk melihat
 hasilnya
-![step-2 output](https://i.imgur.com/xVibmX4.png)
+![css dasar - 2](https://user-images.githubusercontent.com/101562285/158751561-7e5e4a4d-6bab-4cd6-8e47-db384a3cf0f7.png)
+
 
 ## LANGKAH 3
 ### Menambahkan Inline CSS
@@ -76,14 +79,15 @@ hasilnya
  ```
  <p style="text-align: center; color: #ccd8e4;">
  ```
- before:
- ![step-3 before](https://i.imgur.com/PdQFu6Z.png)
- after :
- ![step-3 after](https://i.imgur.com/ukibvhK.png)
+ before: 
+  ![vc css dasar 3](https://i.imgur.com/PdQFu6Z.png)
+ after:
+  ![vc css dasar 3](https://user-images.githubusercontent.com/101562285/158752097-dcce749c-1a08-4a76-b42d-7936e4ff3f82.png)
  Simpan kembali dan refresh kembali browser untuk melihat perubahannya:
 
- ![step-3 output](https://i.imgur.com/WGGwbOZ.png)
+ ![css dasar - 3](https://user-images.githubusercontent.com/101562285/158752246-536222aa-961e-4d0d-aea3-5635b695f3e6.png)
 
+  
  ## LANGKAH 4
  ### Membuat CSS Eksternal
  Buatlah file baru dengan nama style_eksternal.css kemudian buatlah deklarasi CSS seperti berikut
@@ -103,7 +107,7 @@ nav a:hover {
 background: #0B6B3A;
 }
 ```
-![step-4](https://i.imgur.com/ujFftw1.png)
+![vc css dasar 4](https://user-images.githubusercontent.com/101562285/158752489-a4b0c63e-5240-492a-9571-da93e3f60eeb.png)
 Kemudian tambahkan tag `<link>`untuk merujuk file css yang sudah dibuat pada bagian `<head>`
 ```
 <head>
@@ -111,10 +115,10 @@ Kemudian tambahkan tag `<link>`untuk merujuk file css yang sudah dibuat pada bag
  <link rel="stylesheet" href="style_eksternal.css" type="text/css">
 </head>
 ```
-![step-4-1](https://i.imgur.com/W6UCxAk.png)
+![vc css dasar 5](https://user-images.githubusercontent.com/101562285/158752696-ca7b8882-2ce5-44de-9926-2596fa493663.png)
 
 Selanjutnya refresh kembali browser untuk melihat perubahannya
-![step-4-1](https://i.imgur.com/ISMBGGb.png)
+![css dasar - 4](https://user-images.githubusercontent.com/101562285/158752722-37340832-f4dd-4828-9c3b-82ec30495f98.png)
 
 ## LANGKAH 5
 ### Menambahkan CSS Selector
@@ -147,9 +151,9 @@ text-decoration: none;
 background: #E42A42;
 }
 ```
-![step-5](https://i.imgur.com/qcaS83z.png)
+![vc css dasar 6](https://user-images.githubusercontent.com/101562285/158752914-8728a251-206a-45fd-a28c-87f4a40aee5c.png)
 Kemudian simpan kembali dan refresh browser untuk melihat perubahannya.
-![step-5 OUTPUT](https://i.imgur.com/gOklVYe.png)
+![css dasar - 5](https://user-images.githubusercontent.com/101562285/158752945-fdabe014-03bb-4177-8aba-19decf687ae5.png)
 
 # Pertanyaan dan Tugas
 ### 1. Lakukan eksperimen dengan mengubah dan menambah properti dan nilai pada kode CSS dengan mengacu pada CSS Cheat Sheet yang diberikan pada file terpisah dari modul ini
