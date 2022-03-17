@@ -157,7 +157,7 @@ Kemudian simpan kembali dan refresh browser untuk melihat perubahannya.
 
 # Pertanyaan dan Tugas
 ### 1. Lakukan eksperimen dengan mengubah dan menambah properti dan nilai pada kode CSS dengan mengacu pada CSS Cheat Sheet yang diberikan pada file terpisah dari modul ini
-![step-6](https://i.imgur.com/sVetc6i.png)
+![1_pertanyaan](https://user-images.githubusercontent.com/101562285/158758896-ab070c47-4397-49ae-8126-63e997cd873f.png)
 
 ### 2. Apa perbedaan pendeklarasian CSS elemen h1 {...} dengan #intro h1 {...}? berikan penjelasannya!
 perbedaaannya jika hanya h1{} maka akan merubah semua yang ada didalam elemen h1 sedangkan intro h1 hanya akan merubah yang memiliki tag intro
@@ -173,22 +173,22 @@ dimana prioritas CSS nya seperti ini:
 contoh:
 
 ini adalah tampilan coding pada html testing dimana terdapat 2 kalimat yang memiliki elemen yang sama yaitu h1:
- ![step-7](https://i.imgur.com/87FHIwI.png)
+ ![pertanyaan  3_1](https://user-images.githubusercontent.com/101562285/158759333-363916af-12c4-487a-b2be-c13f12db7b3e.png)
 
  disini bisa dilihat sudah terdapat 2 css mencoba merubah warna text h1 :
- ![step-8](https://i.imgur.com/6BKuHMb.png) 
+ ![pertanyaan  3_2](https://user-images.githubusercontent.com/101562285/158759372-1ac80708-e2e5-450e-8c92-721c57c40bd9.png) 
 
  sedangkan eksternal css berupa :
- ![step-9](https://i.imgur.com/eciJnc8.png)
+ ![pertanyaan  3_3](https://user-images.githubusercontent.com/101562285/158759408-b0ada372-f5ae-4223-8494-b7dcd1283a7b.png)
 
  dan hasil adalah :
- ![step-10](https://i.imgur.com/THSnM36.png)
+ ![pertanyaan  3_4](https://user-images.githubusercontent.com/101562285/158759435-24550d08-478e-4557-a252-b0b4930d72e4.png)
 jadi saya mengambil kesimpulan bahwa semakin spesifik CSS tersebut maka prioritas semakin tinggi
 
 ### 4. Pada sebuah elemen HTML terdapat ID dan Class, apabila masing-masing selector tersebut terdapat deklarasi CSS, maka deklarasi manakah yang akan ditampilkan pada browser? Berikan penjelasan dan contohnya! ( <p id="paragraf-1" class="text-paragraf"> )
 hasilnya sesuai dengan kesimpulan saya sebelumnya semakin spesifik css tersebut maka akan semakin tinggi prioritas css tersebut
-![step-11](https://i.imgur.com/eDobCFm.png)
+![pertanyaan  4_1](https://user-images.githubusercontent.com/101562285/158759652-d0955c0b-36ff-459e-ab7b-1ba2b04fd68a.png)
 disitu bisa dilihat terdapat 2 css yang merujuk ke elemen yang sama tapi 1 merujuk dengan id yang birisi font 40 dan warna emas sedangkan yang satu lagi merujuk dengan class yang berisi font 10 dan warna maroon
 hasilnya adalah:
-![step11-output](https://i.imgur.com/6wMF3Nt.png)
+![pertanyaan  4_2](https://user-images.githubusercontent.com/101562285/158759673-2c1ae126-9617-4b24-a5fa-a107f057223f.png)
 text "testing" tersebut mengikuti css selector id daripada selector class dikarenakan id lebih spesifik daripada class
